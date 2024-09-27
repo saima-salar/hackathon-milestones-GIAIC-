@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hackathon-Resume Builder</title>
+  </head>
+  <body>
+    <h1>Interactive Resume Builder By Saima Salar</h1>
+    <form id="resume_Form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your Full Name"
+          required
+        /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          placeholder="Enter Your Email Address"
+          required
+        /><br />
+        <label for="phone">Contact No:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="Phone"
+          placeholder="Enter Your Phone Number"
+          required
+        /><br />
+        <!-- Profile Picture -->
+         <label for="ProfilePicture">Profile Picture</label>
+         <input type="file" name="ProfilePicture" id="ProfilePicture" accept="image" placeholder="Upload Your Image" required>
+      </fieldset>
+      <fieldset>
+        <legend>Education</legend>
+        <!-- <label for="education">Education</label> -->
+        <textarea id="education" name="Education" rows="4" placeholder="Enter Your Education Background" required></textarea
+        ><br />
+      </fieldset>
+      <fieldset>
+        <legend>Skills</legend>
+        <!-- <label for="skills">Skills</label> -->
+        <textarea id="skills" name="skills" rows="4" placeholder="List Your Skills" required></textarea><br />
+      </fieldset>
+      <fieldset>
+        <legend>Work Experience</legend>
+        <!-- <label for="experience">Experience</label> -->
+        <textarea id="experience" name="Experience" rows="4"  placeholder="Describe Your Work Experience" required></textarea
+        ><br />
+      </fieldset>
+      <fieldset>
+      <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
